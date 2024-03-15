@@ -27,8 +27,8 @@ func main() {
 }
 
 func sendUpdate() {
-	water := rand.Float64() * 10 // Random water value between 0 and 10 meters
-	wind := rand.Float64() * 20  // Random wind value between 0 and 20 meters per second
+	water := rand.Float64() * 10 
+	wind := rand.Float64() * 20  
 
 	data := Data{Water: water, Wind: wind}
 	payload, err := json.Marshal(data)
